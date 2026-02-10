@@ -1,3 +1,6 @@
+#MCA044
+#Nidhish Chandran
+
 #Question-1
 
 #Create a numeric vector
@@ -114,5 +117,20 @@ pie(
 
 #Question 8
 
+months <- c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+rain <- c(52, 40, 35, 60, 110, 220, 180, 160, 140, 90, 70, 55)
+plot(1:12, rain,
+     type = "o",
+     xaxt = "n",
+     xlab = "Month",
+     ylab = "Rainfall (mm)",
+     main = "Monthly Rainfall")
+
+axis(1, at = 1:12, labels = months)
+
+#B
+months[which.max(rain)]
 
 
+#MCA044
+#Nidhish Chandran

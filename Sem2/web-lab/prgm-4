@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="css/styleform.css">
+
+<!-- Internal CSS -->
+<style>
+
+.internal
+{
+    color: green;
+}
+
+form
+{
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Inline CSS -->
+<h2 style="color: blue; text-align: center;">
+Registration Form
+</h2>
+
+<form>
+
+<label class="internal">Name:</label>
+<input type="text" style="width: 100%;"><br><br>
+
+<label class="internal">Email:</label>
+<input type="email" style="width: 100%;"><br><br>
+
+<label class="internal">Password:</label>
+<input type="password" style="width: 100%;"><br><br>
+
+<!-- Inline CSS -->
+<input type="submit"
+value="Register"
+style="background-color: blue; color: white; width: 100%;">
+
+</form>
+
+</body>
+</html>

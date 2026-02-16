@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog Comment Form</title>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="css/prgm5.css">
+
+<!-- Internal CSS -->
+<style>
+
+.form-box
+{
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.label-style
+{
+    font-weight: bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Inline CSS -->
+<h2 style="text-align:center; color:blue;">
+Blog Comment Form
+</h2>
+
+<div class="form-box">
+
+<form>
+
+<label class="label-style">Name:</label><br>
+<input type="text" name="name" required
+style="width:100%; padding:5px;"><br><br>
+
+<label class="label-style">Email:</label><br>
+<input type="email" name="email" required
+style="width:100%; padding:5px;"><br><br>
+
+<label class="label-style">Comment:</label><br>
+<textarea name="comment" required
+style="width:100%; padding:5px;"></textarea><br><br>
+
+<!-- Inline CSS -->
+<input type="submit"
+value="Submit Comment"
+style="background-color:green; color:white; padding:8px; width:100%;">
+
+</form>
+
+</div>
+
+</body>
+</html>

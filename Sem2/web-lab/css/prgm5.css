@@ -1,0 +1,17 @@
+/* External CSS */
+
+body
+{
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+input, textarea
+{
+    border: 1px solid gray;
+}
+
+input:focus, textarea:focus
+{
+    border: 2px solid blue;
+}

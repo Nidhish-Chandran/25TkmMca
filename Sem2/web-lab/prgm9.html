@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover Event Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+        }
+
+        .card {
+            width: 350px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            color: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            transition: 0.3s ease;
+        }
+
+        .hover-area {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.1);
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            display: none;
+            margin-top: 15px;
+        }
+
+        .new-text {
+            margin-top: 15px;
+            display: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="hover-area" id="hoverBox">
+            Hover over this area
+        </div>
+
+        <img id="newImage" 
+        src="images/stay-positive-every-situation-inspirational-260nw-1727672176.jpg" 
+        alt="New Image">
+
+        <div class="new-text" id="newText">
+            ✨ Belive 😊
+        </div>
+    </div>
+
+    <script>
+        const hoverBox = document.getElementById("hoverBox");
+        const newImage = document.getElementById("newImage");
+        const newText = document.getElementById("newText");
+
+        hoverBox.addEventListener("mouseover", function() {
+            newImage.style.display = "block";
+            newText.style.display = "block";
+        });
+
+        hoverBox.addEventListener("mouseout", function() {
+            newImage.style.display = "none";
+            newText.style.display = "none";
+        });
+    </script>
+
+</body>
+</html>

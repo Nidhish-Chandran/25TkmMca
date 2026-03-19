@@ -8,21 +8,26 @@
 
 <!-- Internal CSS -->
 <style>
+body {
+    display: flex;
+    justify-content: center;   /* Horizontal center */
+    align-items: center;       /* Vertical center */
+    height: 100vh;             /* Full screen height */
+    margin: 0;
+    background-color: #f2f2f2;
+    flex-direction: column;    /* Keep heading above form */
+}
 
-.form-box
-{
+.form-box {
     width: 400px;
     padding: 20px;
-    margin: auto;
     border: 2px solid black;
     background-color: white;
 }
 
-.label-style
-{
+.label-style {
     font-weight: bold;
 }
-
 </style>
 
 </head>
@@ -30,33 +35,25 @@
 <body>
 
 <!-- Inline CSS -->
-<h2 style="text-align:center; color:blue;">
-Blog Comment Form
-</h2>
+<h2 style="color:blue;">Blog</h2>
 
 <div class="form-box">
-
 <form>
-
 <label class="label-style">Name:</label><br>
-<input type="text" name="name" required
-style="width:100%; padding:5px;"><br><br>
+<input type="text" name="name" required style="width:100%; padding:5px;"><br><br>
 
 <label class="label-style">Email:</label><br>
-<input type="email" name="email" required
-style="width:100%; padding:5px;"><br><br>
+<input type="email" name="email" required style="width:100%; padding:5px;"><br><br>
+
 
 <label class="label-style">Comment:</label><br>
-<textarea name="comment" required
-style="width:100%; padding:5px;"></textarea><br><br>
+<textarea name="comment" required style="width:100%; padding:5px;"></textarea><br><br>
 
 <!-- Inline CSS -->
-<input type="submit"
-value="Submit Comment"
+<input type="submit" valu    e="Submit Comment"
 style="background-color:green; color:white; padding:8px; width:100%;">
 
 </form>
-
 </div>
 
 </body>

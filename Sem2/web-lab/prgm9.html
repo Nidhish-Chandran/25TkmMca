@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minimal Hover Demo</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .card {
+            width: 350px;
+            height: 450px; /* Fixed height prevents flickering */
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .hover-area {
+            width: 100%;
+            padding: 16px 0;
+            border-radius: 12px;
+            background: #1d1d1f;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            z-index: 10; /* Keeps it on top */
+            transition: background 0.2s;
+        }
+
+        .hover-area:hover {
+            background: #434345;
+        }
+
+        /* Container for revealed content to prevent layout shifts */
+        .reveal-container {
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.4s ease;
+            pointer-events: none; /* Mouse ignores this so it doesn't flicker */
+        }
+
+        /* Show content when hovering the box */
+        #hoverBox:hover ~ .reveal-container {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .new-text {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            color: #1d1d1f;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="hover-area" id="hoverBox">
+            Hover over this area
+        </div>
+
+        <div class="reveal-container" id="revealContainer">
+            <img src="images/stay-positive-every-situation-inspirational-260nw-1727672176.jpg" alt="New Image">
+            <div class="new-text">✨ Believe 😊</div>
+        </div>
+    </div>
+
+    </body>
+</html>  

@@ -5,4 +5,4 @@ COPY Palindrome.java .
 
 RUN javac Palindrome.java
 
-CMD ["java", "Palindrome"]
+CMD ["java", "Palindrome"]   

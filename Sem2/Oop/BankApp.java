@@ -2,8 +2,7 @@
 1. Write a Java application to simulate a Bank Account system.
 The program should allow withdrawal from an account. If the withdrawal amount is greater than the available balance, 
 the program should throw a user-defined exception called InsufficientBalanceException and display an appropriate message. 
-Otherwise, complete the withdrawal and display the remaining balance. ( Alsodemonstrate same using Arithmetic Exception)
-*/
+Otherwise, complete the withdrawal and display the remaining balance. ( Alsodemonstrate same using Arithmetic Exception)*/
 
 import java.util.Scanner;
 

@@ -72,6 +72,7 @@ button:hover{
 }
 
 </style>
+
 <script>
 function validateForm()
 {
@@ -97,8 +98,10 @@ function validateForm()
         return false;
     }
 
-    alert("Registration Successful");
-    return true;
+    // Redirect to index page
+    window.location.href = "index.html";
+
+    return false; // stop form submission
 }
 </script>
 
@@ -128,4 +131,4 @@ function validateForm()
 </div>
 
 </body>
-</html> 
+</html>
